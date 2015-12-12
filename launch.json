@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "BatteryApp",
+      "script": "./main.js",
+      "log_date_format": "YYYY-MM-DD",
+      "exec_mode": "fork_mode",
+      "watch": true,
+      "env": {
+        "PORT": 3000,
+        "MONGO_URL": "mongodb://localhost:27017/batteryapp",
+        "ROOT_URL": "http://localhost:3000"
+      }
+    }
+  ]
+}
